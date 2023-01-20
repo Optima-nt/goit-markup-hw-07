@@ -587,6 +587,7 @@ img {
         background-color: #31D0AA;
     }
     .footer-text {
+        width: 264px;
         margin-bottom: 72px;
         color: #FFFFFF;
         font-family: var(--primary-font);
@@ -879,7 +880,6 @@ img {
     .footer-page {
         display: flex;
         flex-wrap: wrap;
-       
      }
       
  }
