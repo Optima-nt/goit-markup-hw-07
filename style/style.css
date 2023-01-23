@@ -365,7 +365,7 @@ img {
         color: #FFFFFF;
     }
     .hero-box {
-        background-image: linear-gradient(to right, rgba(46, 47, 66, 0.7) , rgba(46, 47, 66, 0.7)),url(../image/people-office\ 1.jpg);
+        background-image: linear-gradient(to right, rgba(46, 47, 66, 0.7) , rgba(46, 47, 66, 0.7)),url(../image/Hero/hero-bg-mobile.jpg);
         background-size: cover;
         background-position: center;
         max-width: 1440px;
@@ -392,12 +392,15 @@ img {
         border-radius: 4px;
     }
 }
-@media screen and (max-width:480px) {
-    .hero-box {
-        max-width: 428px;
-
-    }
+@media screen and (min-device-pixel-ratio: 2),
+screen and (min-resolution: 192dpi),
+screen and (min-resolution: 2dppx) {
+.hero-box {
+    background-image:url(../image/Hero/hero-bg-mobile@2x.jpg) ;
 }
+}
+
+
     /* -----------Benefits------------ */
 
 @media screen and (max-width: 767px) {
@@ -435,9 +438,11 @@ img {
     .title-benefits:not(:last-child) {
         margin-bottom: 72px;
     }
+}   
 
-     /* --------Services------------ */
+    /* --------Services------------ */
 
+@media screen and (max-width: 767px) {
     .services {
         display: none;
     }
@@ -451,7 +456,7 @@ img {
    
  /* -------Team------ */
 
-@media screen and (min-width:0px) {
+@media screen and (min-width:320px) {
     .team {
         background: #F4F4FD;
         padding-top: 96px;
@@ -532,7 +537,7 @@ img {
 }
     /* ------Customers------- */
     
-@media screen and (min-width:0px) {
+@media screen and (min-width:320px) {
     .customers {
         padding: 96px 0;
         
@@ -586,6 +591,7 @@ img {
 }
     /* --------Footer------- */
 
+@media screen and (min-width: 320px) {
     .footer {
         padding-top: 96px;
         padding-bottom: 96px;
@@ -711,8 +717,9 @@ img {
         letter-spacing: 0.04em;
         color: rgba(255, 255, 255, 0.6);
     }
+}
 
-@media screen and (min-width:0) and (max-width:767px) {
+@media screen and (min-width:320px) and (max-width:767px) {
     .footer-page {
         padding-bottom: 72px;
     }
@@ -769,10 +776,11 @@ img {
     .menu-item:not(:last-child) {
         margin-right: 40px;
     }
-    
+}   
      /* -----------Hero--------------- */
 
-     .hero {
+@media screen and (min-width:768px) {
+    .hero {
         padding-top: 112px;
         padding-bottom: 108px;
     }
@@ -784,12 +792,23 @@ img {
     } 
     
     .hero-box {
+        background-image: linear-gradient(to right, rgba(46, 47, 66, 0.7) , rgba(46, 47, 66, 0.7)),url(../image/Hero/hero-bg-tablet.jpg);
+        background-size: 768px 436px;
         max-width:1440px;
         height: 436px;
     }
+}
     
-    /* ----------Benefits--------- */   
+@media screen and (min-device-pixel-ratio: 2),
+    screen and (min-resolution: 192dpi),
+    screen and (min-resolution: 2dppx) {
+    .hero-box {
+        background-image:url(../image/Hero/hero-bg-tablet@2x.jpg) ;
+    }
+}
+    /* ----------Benefits--------- */ 
 
+@media screen and (min-width:768px) {
     .benefits {
         background: #FFFFFF;
         padding-bottom: 0;
@@ -813,7 +832,7 @@ img {
         line-height: 1.5;
         color: #434455;
     }
-}
+} 
 
 @media screen and (min-width:768px) and (max-width:1199px) {
     .icon {
@@ -828,9 +847,10 @@ img {
     .benefits-item {
         flex-basis: calc((100% - 24px) / 2)
     }
-
+}
     /* ------Services------- */
 
+@media screen and (min-width:768px) and (max-width:1199px) {
     .services {
         display: none;
     }
@@ -841,8 +861,10 @@ img {
         display: none;
     }
 
+}
     /* ------Team----- */
 
+@media screen and (min-width:768px) and (max-width:1199px) {
     .team-list {
         display: flex;
         flex-wrap: wrap;
@@ -850,7 +872,6 @@ img {
         column-gap: 24px;
     }
 }
-
 /* ------Custommers----- */
 
 @media screen and (min-width:768px) {
@@ -909,13 +930,18 @@ img {
         line-height: 1.5px;
         letter-spacing: 0.02em;
     }
+}    
     /* ---------Hero------------ */
 
+@media screen and (min-width: 1200px) {
+    
    .hero-title {
         max-width: 496px;
         margin-bottom: 48px;
     }
     .hero-box {
+        background-image: linear-gradient(to right, rgba(46, 47, 66, 0.7) , rgba(46, 47, 66, 0.7)),url(../image/Hero/hero-bg-desktop.jpg);
+        background-size: 1440px 600px;
         max-width: 1440px;
         height: 600px;
     }
@@ -923,9 +949,19 @@ img {
         padding-top: 188px;
         padding-bottom: 188px;
     }
-    
-    /* -----------Benefits--------- */
+}
 
+@media screen and (min-device-pixel-ratio: 2),
+    screen and (min-resolution: 192dpi),
+    screen and (min-resolution: 2dppx) {
+    .hero-box {
+        background-image:url(../image/Hero/hero-bg-desktop@2x.jpg) ;
+    }
+}
+
+    /* -----------Benefits--------- */  
+     
+@media screen and (min-width: 1200px) {
     .benefits {
         background: #FFFFFF;
         padding-bottom: 0;
@@ -961,9 +997,10 @@ img {
         display: flex;
         gap: 24px;
     }
-
+}
     /* -------Services----- */
 
+@media screen and (min-width: 1200px) {
     .services {
         background: #FFFFFF;
     }
@@ -990,22 +1027,27 @@ img {
     .services-img {
         border: 1px solid #E7E9FC;
     }
-
+}
     /* --------Team--------- */
 
+@media screen and (min-width: 1200px) {
     .team-list {
         gap: 24px;
     }
+}
 
     /* ------Customers----- */
-    
+
+@media screen and (min-width: 1200px) {
     .customers-list {
         flex-wrap: nowrap;
         gap: 24px;
     }
+}
 
     /* -------Footer------ */
-    
+
+@media screen and (min-width: 1200px) {
     .footer-page {
         display: flex;
         justify-content: center;
@@ -1024,18 +1066,6 @@ img {
         margin-right: 24px;
     }
 }
-   
- 
-    
-
-
-
-
-
-
-
-
-/* ==============FOOTER=============== */
 
 /* ==============MODAL=============== */
 
@@ -1232,3 +1262,114 @@ img {
 .modal-link {
     color: #4D5AE5;
 }
+
+/* ===========Portfolio=========== */
+
+.list-buttons {
+    background-color: #FFFFFF;
+}
+.btn-list-all {
+    padding: 8px 16px;
+    min-width: 69px;
+    border: 1px solid #E7E9FC;
+    border-radius: 4px;
+    background: var(--accent-color);
+    color: #FFFFFF;
+    font-family: 'Roboto';
+    font-style: normal;
+    font-weight: 600;
+    font-size: 16px;
+    line-height: 24px;
+    text-align: center;
+    letter-spacing: 0.04em;
+    cursor: pointer;
+}
+.menu-buttons-item:not(:last-child)  {
+    margin-right: 24px;
+}
+.btn-list {
+    transition: background-color var(--transition), color var(--transition),box-shadow var(--transition),border var(--transition);
+    padding: 8px 16px;
+    min-width: 69px;
+    border: 1px solid #E7E9FC;
+    border-radius: 4px;
+    background: #F4F4FD;
+    font-family: 'Roboto';
+    font-style: normal;
+    font-weight: 600;
+    font-size: 16px;
+    line-height: 24px;
+    text-align: center;
+    letter-spacing: 0.04em;
+    color: var(--accent-color);
+    cursor: pointer;
+}
+.btn-list:hover,
+.btn-list:focus {
+    background-color: var(--accent-color);
+    color: #FFFFFF;
+    box-shadow: 0px 1px 6px rgba(46, 47, 66, 0.08), 0px 1px 1px rgba(46, 47, 66, 0.16), 0px 2px 1px rgba(46, 47, 66, 0.08);
+    border: 1px solid var(--accent-color);
+}
+.menu-buttons {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-bottom: 72px;
+}
+.menu-buttons-item {
+
+}
+.jobs-link  {
+    display: block;
+}
+.jobs-link:hover,
+.jobs-link:focus{
+    box-shadow: 0px 1px 6px rgba(46, 47, 66, 0.08), 0px 1px 1px rgba(46, 47, 66, 0.16), 0px 2px 1px rgba(46, 47, 66, 0.08);
+}
+.jobs-link-overlay {
+    position: relative;
+    overflow: hidden;
+}
+.overlay {
+    position: absolute;
+    transform: translate(0,100%);
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    transition: transform 250ms cubic-bezier(0.4, 0, 0.2, 1);
+    padding: 40px 32px 164px;
+    font-family: 'Roboto';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 24px;
+    letter-spacing: 0.02em;
+    color: #F4F4FD;
+    background: var(--accent-color);
+}
+.jobs-list-item:hover   .overlay   {
+    transform: translate(0,0);
+}
+.jobs-link:focus    .overlay{
+    transform: translate(0,0);
+}
+.jobs-list {
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    column-gap: 24px;
+    row-gap: 48px;
+}
+.jobs-list-item {
+    box-shadow: 0px 1px 6px rgba(46, 47, 66, 0.08); 
+}
+.jobs-title {
+    background-color: #FFFFFF;
+    border: 0.5px solid #F4F4FD;
+    border-top: transparent;
+    padding-top: 32px;
+    padding-bottom: 32px;
+    padding-left: 16px;
+}   
